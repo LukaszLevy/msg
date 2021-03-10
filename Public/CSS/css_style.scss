@@ -1,0 +1,123 @@
+// zmienne
+$mwidth: 400px;
+$bg-transparent: rgba(0,0,0,.4);
+// tekst rozmiar / kolor
+$txt-standard: 16px;
+$txt-big: 20px;
+$txt-small: 12px;
+$txt-micro: 10px;
+$txt-main: black;
+$txt-sec: white;
+$txt-col: yellow;
+// kolory
+$motiv-main: rgba(90, 200, 250, 1);
+$motiv-sec: red;
+// padding
+$pad-small: 4px 10px;
+$pad-med: 6px 14px;
+$pad-big: 10px 22px;
+
+
+// mixiny
+@mixin border($b-thick : 1px, $b-col : $txt-sec, $bor-rad: 5px) {
+    border: solid $b-thick $b-col;
+    border-radius: $bor-rad;
+}
+
+@mixin txt($size: $txt-standard, $color: $txt-sec) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin padding-v($size: 10px) {
+    padding-top: $size;
+    padding-bottom: $size;
+}
+
+
+// style ovr
+body {
+    @include txt();
+    min-height: 100vh;
+    min-width: $mwidth;
+    background-color: $motiv-main;
+    font-family: system-ui;
+}
+
+.row {
+    margin: auto;
+}
+
+//style elementy
+.app-box {
+    min-width: $mwidth;
+    @include padding-v();
+}
+
+.title-sec {
+    @include padding-v();
+    background-color: $bg-transparent;
+    border-radius: 5px;
+}
+
+.title {
+    justify-content: center;
+    font-size: $txt-big;
+}
+
+.msg-sec {
+    margin-top: 30px;
+}
+
+table{
+    min-width: 350px;
+}
+
+thead{
+    font-size: $txt-standard;
+    color: $txt-sec;
+    border-radius: 5px;
+}
+.head-bag{
+    background-color: $motiv-main;
+    padding: $pad-small;
+    border-radius: 5px;
+}
+
+.name-bag{
+    padding: $pad-small;
+    background-color: $txt-sec;
+    border-radius: 5px;
+}
+
+.msg-bag{
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.serach-sec{
+    margin-top: 30px;
+}
+
+form{
+    align-items: center;
+    justify-content: space-evenly;
+}
+input{
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin: 10px;
+}
+input:focus{
+    background-color: $txt-main;
+    color: $txt-sec;
+    box-shadow: inset 0 0 0 1px $motiv-main;
+}
+:focus::-webkit-input-placeholder { color: black; }
+:focus:-moz-placeholder { color: black; }​
+
+#send{
+    height: max-content;
+}
