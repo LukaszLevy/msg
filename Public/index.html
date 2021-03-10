@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Nauka programowania. Lewandowski Łuaksz. Technologie Front-End. JS, HTML, CSS, MongoDB, Git, Node.js</title>
+  <link rel="shortcut icon" type="image/jpg" href="./fav_64.png" />
+  <link rel="shortcut icon" type="image/jpg" href="./fav_48.png" />
+  <link rel="shortcut icon" type="image/jpg" href="./fav_32.png" />
+  <link rel="shortcut icon" type="image/jpg" href="./fav_16.png" />
+  <meta name="description" content="Pierwsze ktoki w full-stack developingu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/css_overall.css" />
+  <link rel="stylesheet" href="./CSS/css_style.css" />
+</head>
+
+<body>
+
+  <div class="container app-box">
+    <!-- sekcja tytuł -->
+    <div class="container title-sec">
+      <div class="row title">Aplikacja wiadomości - lewandowski</div>
+    </div>
+    <!-- sekcja lista wiadomości -->
+    <div class="container title-sec msg-sec">
+      <div class="row msg">Wiadomości</div>
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th><div class="head-bag">Użytkownik</div></th>
+            <th><div class="head-bag">Wiadomość</div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row"><div class="name-bag">Łukasz</div></td>
+            <td><div class="name-bag msg-bag">Helllo, to ja Łukasz. Dziś jest słaby dzień. A ci u Ciebie ?. Mam nadzieję że dobrze.</div></td>
+          </tr>
+          <tr>
+            <td scope="row"><div class="name-bag">Weronika</div></td>
+            <td><div class="name-bag msg-bag">Bye</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container title-sec serach-sec">
+      <div class="row msg">Wyszukiwarka</div>
+      <div class="row">
+        <form id="new-usr" class="row">
+          <input name="username" type="text" placeholder="Nazwa użytkownika">
+          <input name="msg" type="text" placeholder="Wiadomość">
+          <a id="send" class="btn btn-primary btn-info">Wyślij</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- skrypty -->
+  <script src="/Ignore/ignore.js"></script>
+  <script src="./JS/jquery/jquery.js"></script>
+  <script src="./JS/const.js"></script>
+  <script src="./JS/overall_function.js"></script>
+  <script src="./JS/my_js.js"></script>
+</body>
+
+</html>
